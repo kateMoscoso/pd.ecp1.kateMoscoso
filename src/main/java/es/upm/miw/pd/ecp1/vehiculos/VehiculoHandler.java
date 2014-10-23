@@ -14,7 +14,7 @@ public class VehiculoHandler  {
 		//int total = 0;
 		String separator = "";
 		for(Vehiculo vehiculo : vehiculosLista) {
-			concatenate+=(separator + vehiculo.toString());
+			concatenate+=(separator + vehiculo.toString()+"\n");
 			//total += operation.calculate();
 			separator = "+";
 		}

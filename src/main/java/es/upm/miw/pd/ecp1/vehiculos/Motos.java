@@ -20,7 +20,8 @@ public class Motos extends Vehiculo{
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "El vehiculo Motos tiene la siguiente descripcion: " + descripcion;
+		return "El vehiculo Motos tiene la siguiente descripcion: " 
+				+ this.descripcion+ "id: " + this.id;
 	}
 
 }

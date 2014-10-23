@@ -36,7 +36,7 @@ public class Coche extends Vehiculo{
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "El vehiculo Coche es de Categoria: " + categoria;
+		return "El vehiculo Coche es de Categoria: " + categoria + " descripcion: "+ descripcion;
 	}
 
 }

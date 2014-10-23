@@ -21,7 +21,7 @@ public class Bicicleta extends Vehiculo{
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "El vehiculo Bicicleta tiene la siguiente descripcion: " + this.descripcion+ " y el ID: " + id;
+		return "El vehiculo Bicicleta tiene la siguiente descripcion: " + this.descripcion+ " y el ID: " + this.id;
 	}
 
 }
