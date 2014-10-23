@@ -11,7 +11,7 @@ public class MainVehiculo {
 		vehiculos.addVehiculo(new Bicicleta("Rockrider 5.0 ", 1234));
 		vehiculos.addVehiculo(new Motos("Yamaha Majesty 400", 8345));
 		vehiculos.addVehiculo(new Motos("BMW F800GS", 8375));
-		System.out.println(vehiculos.vehiculosLista);
+		vehiculos.vehiculosLista;
 	}
 
 }

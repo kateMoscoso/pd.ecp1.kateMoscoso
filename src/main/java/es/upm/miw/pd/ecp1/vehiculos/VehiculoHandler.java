@@ -10,14 +10,13 @@ public class VehiculoHandler  {
 	public void addVehiculo(Vehiculo vehiculo) {
 		vehiculosLista.add(vehiculo);
 	}
-	public String obtenerListaVehiculos(){	
+	public void obtenerListaVehiculos(){	
 		//int total = 0;
-		String separator = "";
+		//String separator = "";
 		for(Vehiculo vehiculo : vehiculosLista) {
-			concatenate+=(separator + vehiculo.toString()+"\n");
+			System.out.println(vehiculo.toString());
 			//total += operation.calculate();
-			separator = "+";
 		}
-		return concatenate ;
+		//return concatenate ;
 	}
 }
