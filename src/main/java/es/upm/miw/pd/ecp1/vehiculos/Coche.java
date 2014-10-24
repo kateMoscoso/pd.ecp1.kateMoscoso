@@ -1,9 +1,10 @@
 package es.upm.miw.pd.ecp1.vehiculos;
 
 public class Coche extends Vehiculo{
-	String categoria;
-	public Coche(String descripcion, int id, String categoria) {
-		super(descripcion, id);
+	public String categoria;
+	public int id;
+	public Coche(String descripcion,  String categoria) {
+		super(descripcion);
 		this.categoria=categoria;
 	}
 
@@ -36,7 +37,21 @@ public class Coche extends Vehiculo{
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "El vehiculo Coche es de Categoria: " + categoria + " descripcion: "+ descripcion;
+		return "El vehiculo Coche es de Categoria: " + categoria + 
+				" descripcion: "+ descripcion + " id: " +id;
+	}
+
+
+	@Override
+	public void asignarID(int id) {
+		this.id=id;
+		
+	}
+
+
+	@Override
+	public int getId() {
+		return this.id;
 	}
 
 }

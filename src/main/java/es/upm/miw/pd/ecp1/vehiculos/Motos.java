@@ -2,8 +2,9 @@ package es.upm.miw.pd.ecp1.vehiculos;
 
 public class Motos extends Vehiculo{
 
-	public Motos(String descripcion, int id) {
-		super(descripcion, id);
+	public int id;
+	public Motos(String descripcion) {
+		super(descripcion);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -21,7 +22,21 @@ public class Motos extends Vehiculo{
 	public String toString() {
 		// TODO Auto-generated method stub
 		return "El vehiculo Motos tiene la siguiente descripcion: " 
-				+ this.descripcion+ "id: " + this.id;
+				+ this.descripcion+ " id: " + this.id;
 	}
 
+	public void setID(int id){
+		this.id=id;
+	}
+
+	@Override
+	public void asignarID(int id) {
+		this.id=id;
+		
+	}
+
+	@Override
+	public int getId() {
+		return this.id;
+	}
 }

@@ -2,8 +2,9 @@ package es.upm.miw.pd.ecp1.vehiculos;
 
 public class Bicicleta extends Vehiculo{
 
-	public Bicicleta(String descripcion, int id) {
-		super(descripcion, id);
+	public int id;
+	public Bicicleta(String descripcion) {
+		super(descripcion);
 	}
 
 	@Override
@@ -22,6 +23,17 @@ public class Bicicleta extends Vehiculo{
 	public String toString() {
 		// TODO Auto-generated method stub
 		return "El vehiculo Bicicleta tiene la siguiente descripcion: " + this.descripcion+ " y el ID: " + this.id;
+	}
+
+	@Override
+	public void asignarID(int id) {
+		this.id=id;
+		
+	}
+
+	@Override
+	public int getId() {
+		return this.id;
 	}
 
 }
